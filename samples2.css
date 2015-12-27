@@ -1,0 +1,663 @@
+<style type="text/css">
+
+<!--
+
+*{
+	margin:  0px; 
+	padding: 0px;
+}
+
+@font-face {
+    font-family: 'jGaramondRegular';
+    src: url('jgaramond-webfont.eot');
+    src: url('jgaramond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('jgaramond-webfont.woff') format('woff'),
+         url('jgaramond-webfont.ttf') format('truetype'),
+         url('jgaramond-webfont.svg#jGaramondRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body 
+{
+	margin: 0px auto auto auto; /* Top, Right, Bottom, Left */
+	background-color: #FFFFFF;
+	font-family: Garamond, "TimesNewRomanPSMT", "Times New Roman", Times, serif;
+	font-size: 100%; /* orginally 0.9em*/
+    direction: ltr;
+	color: #000000;
+}
+
+#title 
+{
+	width: 798px;
+	height: 90px;
+	border: double rgba(30,30,30,0.15);
+	border-radius: 22px 22px 0 0;
+	margin: 0px auto 0px auto;
+	background-color: rgba(140,140,170,0.6);
+	line-height: 100%;
+
+	box-shadow: 0 -3px 15px 9px rgba(0,0,0,0.4)
+
+}
+#title h1 
+{
+	font-size: 2.9em; font-style: bold;
+	letter-spacing:10px; word-spacing:5px;
+	text-align: center;
+	line-height: 2%;
+}
+#title h2 
+{
+	font-size: 1.6em; font-style: bold;
+	letter-spacing:8px;
+	text-align: center;
+	line-height: 70%;
+}
+
+#container 
+{
+	width: 1225px;
+	margin: 0px auto 0px auto; /* Top, Right, Bottom, Left */
+	border: double rgba(40,20,160,0.1); /*30,30,30,0.3*/
+	border-radius: 0 0 23px 23px;
+	background-color: rgba(120,120,120,0.2);
+	color: rgb (120,120,120);
+	text-align: justify;
+	font-family: Garamond, serif;
+
+	box-shadow: 0 6px 15px 7px rgba(0,0,0,0.5), 
+				inset 0 1px rgba(255,255,255,0.3), 
+				inset 0 10px 20px rgba(255,255,255,0.25), 
+				inset 0 -15px 30px rgba(20,0,110,0.3);
+	  
+
+}
+
+#container a:link, #container a:visited
+{
+	color: #000000;
+	font-weight:bold;
+	text-decoration: none;
+	font-size: 1.3em; /* orginally 145%*/
+}
+#container a:hover { color: #FFFFFF; } /* was rgb(120, 180, 130); */
+
+#main a:hover { color: #FFFFFF; }
+
+pre,code { color: #0000A0; }
+
+td.left   { text-align: left; }
+td.center { text-align: center; }
+td.right  { text-align: right; }
+
+#top table 
+{ 
+	width: 100%;
+	height: 120px;
+	background-image: url(../images/head.jpg);
+	color: rgb(0, 0, 127);
+	font-size: 150%;
+}
+
+#navbar table
+{
+	border-top:    0px solid rgb(255, 255, 255);
+	border-bottom: 0px solid rgb(255, 255, 255);
+	border-radius: 30px;
+}
+
+
+#navbar img.treble
+{
+	margin-top: -16px;
+	margin-bottom: -17px;
+	margin-right: -10px;
+	margin-left: 1px;
+}
+#navbar img.bass
+{
+	margin-top: -9px;
+	margin-bottom: -17px;
+	margin-right: -1px;
+	margin-left: -14px;
+}
+
+#navbar td
+{ 
+	color:#000000;
+	border-right: 0px solid rgb(255, 255, 255);
+	border-radius: 30px;
+	font-size: 0.9em;
+	padding: 0px;
+	font-family: "Book Antiqua";
+	
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+
+}
+
+#navbar td:hover { 
+	
+	color:#FFFFFF;
+	background-color: rgba(10, 10, 10,0.8);
+	
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+#range-logo 
+{
+    /*background-image:url(http://www.ericcappello.com/Tab_BG.png);*/
+    display:block;
+}
+
+
+#navbar table 
+{
+	background-color: rgba(255, 255, 255, 0.2); /* rgb(204, 204, 255); */ 
+	height: 2em;
+	text-align: center;
+}
+	
+#main 
+{
+	display: block;
+	margin:  0px auto 0px auto; /* Top, Right, Bottom, Left */
+	padding: 20px 0.5in 20px 0.5in; 	
+	text-align: inherit;
+	line-height: 125%;
+	color: #000000;
+	font-weight:bold;
+}
+
+
+#main p
+{
+	line-height: 2em;
+	font-size: 1.3em; /* orginally 120%*/
+	
+}
+#main p.about 
+{
+	color:#FFFFFF;
+	
+	padding: 15px;
+	background-color:rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	font-weight: bold;
+	
+	/*color animation*/
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+#main p.about:hover
+{
+	color:#FFFFFF;
+	
+	background-color:rgba(10, 10, 10, 0.8);
+	
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+/*News Page*/
+
+#main ul.secondary
+{
+	line-height: 200%;
+	font-size: 0.9em;
+}
+
+#main li.primary
+{
+	border-bottom:1px solid rgba(255,255,255,0.2);
+	background-color:rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	padding:5px;
+
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+#main li.primary:hover
+{
+	background-color:rgba(255, 255, 255, 0.2);
+	
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+#main ul.primary
+{
+	line-height: 200%;
+	font-size: 1.15em;
+	padding: 9px;
+	background-color:rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2) inset;
+	
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-right-radius:30px;
+	width:900px;
+}
+
+#main a.news:link, #main a.news:visited
+{
+	color: #70B8FF;  /*was color: rgb(185, 255, 205); */
+}
+
+#main a.news:hover
+{
+	color: #AD5CFF;  /*was color: rgb(110, 170, 120); */
+}
+
+#main a.bubbles:link, #main a.bubbles:visited
+{
+	color: rgb(255, 255, 255);
+}
+
+#main a.bubbles:hover
+{
+	color: rgb(255, 255, 255);
+}
+
+#main p.bubbles 
+{
+	background-color:rgba(255, 255, 255, 0.2);
+	font-size: 1.4em;
+	line-height: 135%;
+	text-align: center;
+	padding: 4px;
+	font-weight: bold;
+
+	/*color animation*/
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+#main p.bubbles:hover 
+{
+	background-color:rgba(10, 10, 10, 0.8);
+	font-size: 1.4em;
+	
+	/*color animation*/
+	-webkit-transition: background-color 400ms linear;
+	    -moz-transition: background-color 400ms linear;
+	    -o-transition: background-color 400ms linear;
+	    -ms-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+
+}
+/*#main p:active {background-color:rgba(79, 79, 79, 0.9);}   for clicking*/
+
+
+/*custom scrollbar style for list (news page)*/
+
+ul.primary::-webkit-scrollbar { width: 14px;}
+
+ul.primary::-webkit-scrollbar-button {width: 18px; height: 0px;}
+
+ul.primary::-webkit-scrollbar-track 
+{
+	background: rgba(200, 200, 250, 0);
+    box-shadow: 0px 0px 20px rgba(100, 100, 100, 0) inset; border-radius:10px;
+
+	-webkit-transition: background 400ms linear;
+	    transition: background 400ms linear;
+}
+
+ul.primary::-webkit-scrollbar-track:hover 
+{
+	background: rgba(255, 255, 255, 0.2); 
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5) inset; 
+	border-radius:10px;
+	
+	-webkit-transition: background-color 400ms linear;
+	    transition: background-color 400ms linear;
+}
+
+ul.primary::-webkit-scrollbar-thumb {cursor:pointer; background: rgba(255, 255, 255, 0.2); border-radius:15px; 
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5) inset;}
+
+ul.primary::-webkit-scrollbar-thumb:hover { cursor:pointer; background: rgba(10, 10, 10, 0.3); box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.5) inset;}
+
+
+
+
+
+
+
+#main h1, #main h2, #main h3 {  }
+
+#main h2, #main h3, #main h4 { font-weight: normal; }
+
+#main h1 	
+{	
+			font-size: 2.6em;
+			font-weight: bold;
+			text-align: center;
+			/* text-transform: uppercase; */
+}
+#main h1.contact 
+{
+	font-size: 1.7em;
+	font-weight: bold;
+	text-align: center;
+	word-spacing:8px;
+}
+
+
+#main h2 
+{ 
+	font-size: 1.4em; text-align: center;
+}
+
+#main h3 { font-size: 180%; }
+#main h4 { color: rgb(0, 0, 0); }
+
+#main h1, h2, ul { line-height: 140% }
+
+#main img
+{
+	padding: 2px; margin: 20px;
+}
+
+#jp_container_1 img
+{
+	border: 0; padding: 0px; background-color: rgba(0, 0, 0, 0); margin: 0px; box-shadow: none;
+}
+
+#jp_container_1 table
+{
+	border: 1px solid black; padding: 0px; background-color: rgba(0, 0, 0, 0); margin: 0px; 
+	text-align: left;
+}
+
+
+#main img.signature
+{	
+	float: right;
+	border: 1px solid rgb(0, 0, 0);
+	
+	margin: 10px 10px 5px 10px;
+	padding: 5px;
+	background-color: #FFF;
+	
+	position: relative;
+	right: -0px;
+	bottom: -0px;
+} 
+
+
+
+#main table
+{ 
+	text-align: center; 
+}
+
+#main th.grade { text-align: left; }
+
+.odd {
+  background-color: #efefef; /* #C3FDB8;  */
+}
+
+.even {
+  background-color: #ffffff;
+}
+.black {
+  background-color: #000000;
+}
+
+#mailform h1.title 
+{
+	text-align : center;
+}
+
+#mailform input[type=submit] 
+{
+    border-radius: 10px;
+    border: 1px;
+    width: 80px;
+    height:40px;
+    /*font-family: Tahoma;*/
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
+
+
+#foot a.soundcloud, a.soundcloud:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/soundcloud.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.soundcloud:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/soundcloud_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.youtube, a.youtube:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/youtube.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.youtube:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/youtube_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.imdb, a.imdb:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/imdb.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.imdb:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/imdb_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.linkedin, a.linkedin:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/linkedin.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.linkedin:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/linkedin_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.facebook, a.facebook:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/facebook.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.facebook:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/facebook_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot
+{
+	width: 100%;
+	/*border-top: 1px solid #000000;*/ 
+	text-align: center;
+	background-color: rgba(60,60,60,0.4);
+	font-size: 1em; 
+	position:relative;
+	border-radius:0 0 16px 16px;
+	
+
+}
+
+#foot table 
+{
+	 /*  rgb(204, 204, 255); */
+	width: 100%; 
+	height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	border-top: 2px solid rgb(255, 255, 255);
+	border-bottom: 0px solid rgba(255, 255, 255, 0.5);
+	border-radius:0 0 16px 16px;
+
+}
+
+#foot td { width: 267px }
+
+	
+td.leftfoot    { text-align: left; }
+td.centerfoot  { text-align: center; }
+td.rightfoot   { text-align: right; }
+
+-->         
+
+
+</style>
