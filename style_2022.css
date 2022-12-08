@@ -1,0 +1,213 @@
+<style type="text/css">
+
+<!--
+
+*{
+	margin:  0px; 
+	padding: 0px;
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    font-style: normal;
+}
+
+
+#foot a.soundcloud, a.soundcloud:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/soundcloud.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.soundcloud:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/soundcloud_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.youtube, a.youtube:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/youtube.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.youtube:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/youtube_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.imdb, a.imdb:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/imdb.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.imdb:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/imdb_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.linkedin, a.linkedin:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/linkedin.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.linkedin:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/linkedin_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.facebook, a.facebook:visited 
+{
+	background-image: url(http://ericcappello.com/images/SM/facebook.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot a.facebook:hover
+{
+	background-image: url(http://ericcappello.com/images/SM/facebook_h.png);
+	display:block;
+	height:60px;
+	width:60px;
+	background-size: 60px 60px;
+	
+	/*image animation*/
+	-webkit-transition: background-image 300ms linear;
+	    -moz-transition: background-image 300ms linear;
+	    -o-transition: background-image 300ms linear;
+	    -ms-transition: background-image 300ms linear;
+	    transition: background-image 300ms linear;
+}
+
+#foot
+{
+	width: 100%;
+	/*border-top: 1px solid #000000;*/ 
+	text-align: center;
+	background-color: rgba(60,60,60,0.4);
+	font-size: 1em; 
+	position:relative;
+	border-radius:0 0 16px 16px;
+	
+
+}
+
+#foot table 
+{
+	 /*  rgb(204, 204, 255); */
+	width: 100%; 
+	height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	border-top: 2px solid rgb(255, 255, 255);
+	border-bottom: 0px solid rgba(255, 255, 255, 0.5);
+	border-radius:0 0 16px 16px;
+
+}
+
+#foot td { width: 267px }
+
+	
+td.leftfoot    { text-align: left; }
+td.centerfoot  { text-align: center; }
+td.rightfoot   { text-align: right; }
+
+-->         
+
+
+</style>
