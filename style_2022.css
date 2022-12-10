@@ -196,11 +196,11 @@
 	color: #FFFFFF;
 	border-top: 2px solid rgb(255, 255, 255);
 	border-bottom: 0px solid rgba(255, 255, 255, 0.5);
-	border-radius:0 0 16px 16px;
+	border-radius: 16px 16px 16px 16px;
 
 }
 
-#foot td { width: 267px }
+#foot td { width: auto; }
 
 	
 td.leftfoot    { text-align: left; }
