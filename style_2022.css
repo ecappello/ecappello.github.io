@@ -98,9 +98,9 @@
 {
 	background-image: url(http://ericcappello.com/images/SM/imdb_h.png);
 	display:block;
-	height:60px;
-	width:60px;
-	background-size: 60px 60px;
+	height:3.75em;
+	width:3.75em;
+	background-size: 3.75em 3.75em;
 	
 	/*image animation*/
 	-webkit-transition: background-image 300ms linear;
